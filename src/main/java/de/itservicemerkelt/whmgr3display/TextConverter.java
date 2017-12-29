@@ -12,6 +12,7 @@ public class TextConverter {
         BufferedImage img = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2d = img.createGraphics();
         g2d.setColor(Color.WHITE);
+        g2d.setBackground(new Color(0,0,0,0));
         g2d.setFont(new Font("Arial", Font.PLAIN, size));
         FontMetrics fm = g2d.getFontMetrics();
         g2d.clearRect(0, 0, img.getWidth(), img.getHeight());
